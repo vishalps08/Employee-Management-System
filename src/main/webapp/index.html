@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Box with Buttons</title>
+    <style>
+        /* Reset styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Center the content on the page */
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+        }
+
+        /* Centered box styling */
+        .centered-box {
+            text-align: center;
+            width: 300px;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Button styling */
+        button {
+            width: 100px;
+            padding: 10px;
+            margin: 10px;
+            font-size: 16px;
+            color: #ffffff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Heading and text styling */
+        h2 {
+            margin-bottom: 10px;
+            color: #333333;
+        }
+
+        p {
+            margin-bottom: 20px;
+            color: #666666;
+        }
+    </style>
+</head>
+<body>
+    <div class="centered-box">
+        <h2>Welcome</h2>
+        <p>Please choose an option:</p>
+        <button onClick="window.location.href='SignUp.html'">Signup</button>
+        <button onClick="window.location.href='login.html'">Login</button>
+    </div>
+</body>
+</html>
